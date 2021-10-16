@@ -12,12 +12,6 @@
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link @yield('formProviderActive')" href="{{ route('main/provider') }}">Buat Provider</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link @yield('formDataActive')" href="{{ route('main/data-provider') }}">Isi Data Provider</a>
-        </li>
       </ul>
     </div>
   </div>

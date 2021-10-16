@@ -13,7 +13,7 @@ use DB;
 class DataProviderController extends Controller
 {
     public function editDataProvider(DataProvider $dataprovider, Provider $provider)
-    {   
+    {
         return view('content/edit/edit-data-provider',['dataprovider' => $dataprovider, 'provider' => $provider]);
     }
 
@@ -28,7 +28,7 @@ class DataProviderController extends Controller
 
         $rules = [
             'provider' => 'required',
-            'nama_paket' => 'required|min:4',
+            'nama_paket' => 'required|min:2',
             'kecepatan' => 'required',
             'harga' => 'required',
         ];
@@ -85,7 +85,7 @@ class DataProviderController extends Controller
     {
 
         $rules = [
-            'nama_paket' => 'required|min:4',
+            'nama_paket' => 'required|min:2',
             'kecepatan' => 'required',
             'harga' => 'required'
         ];

@@ -17,7 +17,7 @@
 		        		<div class="col">
 		        			<h3 class="float-end me-3">
 		        				/edit-data-provider
-		        			</h3>	
+		        			</h3>
 		        		</div>
 		        	</div>
 		        </div>
@@ -71,7 +71,7 @@
 						<div class="form-group">
 							<div class="input-group">
 			                    <span class="input-group-text"><i class="fas fa-tachometer-alt"></i></span>
-			                    <input type="text" name="kecepatan" class="form-control" value="{{ old('kecepatan') ?? $dataprovider->kecepatan }}">
+			                    <input type="number" name="kecepatan" class="form-control" value="{{ old('kecepatan') ?? $dataprovider->kecepatan }}">
 	                  		</div>
 						</div>
 					</div>
